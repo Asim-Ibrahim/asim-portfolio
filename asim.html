@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asim Ibrahim | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+    section, footer {
+      background: #1e293b;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover, footer:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.25);
+    }
+    nav {
+      background: #1e293b;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #60a5fa;
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+    h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.5rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+}
+    p, li {
+  color: #e2e8f0;
+  font-size: 1.05rem;
+}
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li::before {
+      content: "\2022";
+      color: #3b82f6;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .project {
+      background: #1e293b;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
+    }
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+    }
+    .project-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .icon-uav { color: #facc15; }
+    .icon-crash { color: #ef4444; }
+    .icon-bottle { color: #3b82f6; }
+    .icon-nutrient { color: #22c55e; }
+    .icon-air { color: #38bdf8; }
+
+    .project p {
+      margin: 0.5rem 0;
+    }
+    .project .skills {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-top: 0.5rem;
+    }
+    .contact-icons {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .contact-icons a {
+      margin: 0 0.5rem;
+      color: #3b82f6;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .contact-icons a:hover {
+      transform: scale(1.2);
+      color: #60a5fa;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#awards">Awards</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+  <main>
+    <div style="text-align: center; margin-top: 2rem;">
+      <h1>Hi, I'm Asim <i class='fa-solid fa-hand-peace'></i></h1>
+      <p>Building cool things with code and circuits.</p>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/asimibrahim" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:asim.ibrahim.official@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a final-year Electronic Engineering student at Universiti Teknologi Malaysia, passionate about technology and driven to develop impactful solutions through embedded systems and IoT.</p>
+    </section>
+
+    
+
+<section id="experience">
+  <h2>Experience</h2>
+  <p><strong>Field Application Intern</strong> – Sophic Automation Sdn Bhd (Jul–Oct 2024)</p>
+  <ul>
+    <li>Supported project implementation and customer solutions</li>
+    <li>Performed electrical wiring and mechanical assembly of industrial machines</li>
+  </ul>
+</section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <i class="fa-solid fa-robot project-icon icon-uav"></i>
+          <h3>AI UAV for Search & Rescue</h3>
+          <p>Drone with AI-powered human detection and waypoint navigation.</p>
+          <p class="skills">Skills: Python, YOLOv8, DroneKit, QGroundControl</p>
+        </div>
+        <div class="project">
+          <i class="fa-solid fa-car-burst project-icon icon-crash"></i>
+          <h3>Crash Alert Device</h3>
+          <p>IoT crash detection system using sensors and GSM/GPS.</p>
+          <p class="skills">Skills: ESP32, GPS, GSM, C</p>
+        </div>
+        <div class="project">
+          <i class="fa-solid fa-industry project-icon icon-bottle"></i>
+          <h3>Bottle-Filling Automation</h3>
+          <p>Smart system for fluid control and monitoring in bottling.</p>
+          <p class="skills">Skills: ESP32, Intel Galileo, I2C/SPI</p>
+        </div>
+        <div class="project">
+          <i class="fa-solid fa-leaf project-icon icon-nutrient"></i>
+          <h3>Nutrient Cycling Optimizer</h3>
+          <p>Environmental monitoring system for smart agriculture.</p>
+          <p class="skills">Skills: IoT, Sensors, Embedded C</p>
+        </div>
+        <div class="project">
+          <i class="fa-solid fa-wind project-icon icon-air"></i>
+          <h3>Air Quality Monitor</h3>
+          <p>Real-time pollutant tracking using cloud dashboard.</p>
+          <p class="skills">Skills: ESP32, Arduino Cloud, MQ135, DHT11</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Hardware: Arduino, ESP32, Raspberry Pi</li>
+        <li>Languages: C, Python, MATLAB</li>
+        <li>Tools: Oscilloscope, Function Generator</li>
+        <li>Protocols: SPI, I2C, UART</li>
+      </ul>
+    </section>
+
+    
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul>
+        <li>Power Them Award – EECS2025 Capstone Competition</li>
+        <li>3rd Place – AI & IoT Gesture Control Robot Challenge</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out via email or LinkedIn!</p>
+      <div class="contact-icons">
+        <a href="mailto:asim.ibrahim.official@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/asimibrahim" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+      <div style="text-align: center; margin-top: 2rem;">
+      <a href="#about" style="display: inline-block; color: #3b82f6; font-size: 2rem; text-decoration: none; transition: transform 0.3s ease;">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Asim Ibrahim. All rights reserved.</p>
+  </footer>
+</body>
+</html>
